@@ -10,7 +10,14 @@ import userRoutes from "./app/routes/user.routes.js";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "https://task-lab08-frontend.onrender.com"
+  ],
+  credentials: true
+}));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
