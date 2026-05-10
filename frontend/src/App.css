@@ -1,0 +1,131 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Segoe UI, sans-serif;
+  background:#050505;
+}
+
+.app{
+  min-height:100vh;
+  color:#ffffff;
+  background:
+  radial-gradient(circle at top left,#00ffaa15,transparent 28%),
+  radial-gradient(circle at top right,#00d9ff15,transparent 28%),
+  linear-gradient(135deg,#000000,#071015,#000000);
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding:18px 30px;
+  background:rgba(0,0,0,.75);
+  border-bottom:1px solid rgba(0,255,170,.18);
+  backdrop-filter:blur(10px);
+}
+
+.navbar a{
+  color:#ffffff;
+  text-decoration:none;
+  font-weight:600;
+  transition:.25s;
+}
+
+.navbar a:hover{
+  color:#00d9ff;
+}
+
+.navbar button{
+  margin-left:auto;
+  padding:10px 16px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:700;
+  color:#000;
+  background:linear-gradient(90deg,#00ffaa,#00d9ff);
+  transition:.25s;
+}
+
+.navbar button:hover{
+  transform:translateY(-1px);
+  box-shadow:0 0 12px rgba(0,217,255,.35);
+}
+
+/* CARD */
+.card{
+  width:420px;
+  max-width:95%;
+  margin:70px auto;
+  padding:34px;
+  border-radius:18px;
+  background:rgba(12,12,12,.92);
+  border:1px solid rgba(255,255,255,.06);
+  box-shadow:
+  0 12px 35px rgba(0,0,0,.45),
+  0 0 18px rgba(0,217,255,.08);
+}
+
+.card h1{
+  margin-bottom:18px;
+  color:#00ffaa;
+  font-size:30px;
+}
+
+.card h2{
+  margin-bottom:8px;
+  color:#00d9ff;
+}
+
+.card p{
+  color:#d8d8d8;
+  line-height:1.5;
+}
+
+/* INPUTS */
+.card input{
+  width:100%;
+  padding:13px;
+  margin-bottom:14px;
+  border-radius:10px;
+  border:1px solid #1f1f1f;
+  background:#050505;
+  color:#ffffff;
+  outline:none;
+  transition:.25s;
+}
+
+.card input:focus{
+  border-color:#00ffaa;
+  box-shadow:0 0 10px rgba(0,255,170,.18);
+}
+
+/* BUTTONS */
+.card button{
+  width:100%;
+  padding:13px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:700;
+  color:#000;
+  background:linear-gradient(90deg,#00ffaa,#00d9ff);
+  transition:.25s;
+}
+
+.card button:hover{
+  transform:translateY(-1px);
+  filter:brightness(1.05);
+}
+
+/* MESSAGE */
+.message{
+  margin-top:18px;
+  color:#00ffaa !important;
+  font-weight:700;
+}
